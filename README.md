@@ -692,8 +692,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AIService {
-  static const String apiUrl = 'https://api.anthropic.com/v1/messages';
-  
   Future<String> getHealthAdvice(String question) async {
     try {
       final response = await http.post(
